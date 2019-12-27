@@ -10,31 +10,27 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         title: Text("hello"),
         centerTitle: true,
-        backgroundColor: Colors.amber,
+        backgroundColor: Colors.blueGrey,
       ),
-      body: Center(
-          child: Container(
-              color: Colors.blue,
-              child: Column(children: [
-                Image.asset("images/space3.jpeg"),
-                Icon(Icons.stars, color: Colors.red, size: 50),
-                RaisedButton(
-                  onPressed: () {
-                    print('hello');
-                  },
-                  child: Text("click me"),
-                  color: Colors.blueGrey,
-                  textColor: Colors.white,
-                ),
-                RaisedButton.icon(
-                    onPressed: () {},
-                    icon: Icon(Icons.mail),
-                    label: Text('hello')),
-                IconButton(
+      body: Container(
+          color: Colors.blueGrey,
+          padding: EdgeInsets.all(20),
+          margin: EdgeInsets.all(20),
+          child: Center(
+              child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: <Widget>[
+                Text('hello'),
+                FlatButton(
                   onPressed: () {},
-                  icon: Icon(Icons.ac_unit),
-                  color: Colors.amber,
-                )
+                  color: Colors.red,
+                  child: Text('click me'),
+                ),
+                Container(
+                    color: Colors.cyan,
+                    padding: EdgeInsets.all(20),
+                    child: Text('inside'))
               ]))),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
